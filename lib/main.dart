@@ -125,6 +125,17 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.bottomLeft,
+              end: Alignment.bottomRight,
+              colors: [
+              Color(0xFFA3815E),
+              Color(0xFFAA745B)
+            ],)
+          ),
+        ),
       ),
       body: Container(
         child: Column(
